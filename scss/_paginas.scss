@@ -1,0 +1,95 @@
+.pics{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	width: $w-total;
+	max-width: 1200px;
+	margin: 3rem auto;
+	background-color: #60b6c736;
+	border-radius: 1em 5em;
+}
+
+@media all and (min-width: 720px)
+	{
+		.pics{
+			flex-wrap: nowrap;
+			width: ($w-total)-15; 
+		}
+	}
+
+
+.pics--reverse{
+	@extend .pics;
+	flex-direction: row-reverse;
+}
+
+.pics__img{
+	width: 50%;
+	height: 50%;
+	max-width: 269px;
+	max-height: 377px;
+	margin: 3rem;
+	border: 5px outset;
+	box-sizing: border-box;
+}
+
+.pics__texto{
+	@include textoIntro
+
+}
+
+.pags h1{
+	text-align: center;
+	margin: 1.2rem auto;
+}
+
+.backContactoRecomienda{
+	background-image: url("../media/contacto.png"); 
+}
+
+
+.formContacto .block{
+	display: block;
+	margin-bottom: 0;
+	padding: 0.5em;
+}
+
+.formContacto{
+	font-family: 'Bree Serif', serif;
+    font-family: 'Castoro', serif;
+}
+
+.contacto{
+	text-align: center;
+}
+
+.contacto h1{
+	margin-top: 2rem;
+}
+
+.contacto p{
+	font-size: 1.3rem;
+}
+
+.misInputs{
+	width: ($w-total)/2;
+	margin: 1.2rem auto;
+	padding: 1em;
+}
+
+.miSelector{
+	width: ($w-total)/2;
+	margin: 0 auto 1.2rem auto;
+}
+
+@media all and (min-width: 720px)
+	{
+		.misInputs, .miSelector{
+			width: ($w-total)/4;
+		}
+	}	
+
+.icono--left{
+	@include icono;
+	left: .5em;
+}

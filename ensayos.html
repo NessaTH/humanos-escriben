@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+	<title>Ensayos</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/humanos.css">
+</head>
+<body>
+	<div class="container-fluid miBg">
+		<div class="header">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand" href="index.html">LOGO (lleva al Home)</a>
+				<button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav ml-5 header__botones">
+						<a class="nav-link p-3 header__botones--izq" href="cuentos.html">Cuentos</a>
+						<a class="nav-link p-3" href="ensayos.html">Ensayos</a>
+						<a class="nav-link p-3 header__botones--izq" href="novelas.html">Novelas</a>
+						<a class="nav-link p-3" href="poesia.html">Poesía</a>
+					</div>
+					<form class="form-inline pl-4">
+					    <input class="form-control mr-sm-2 header__barra" type="search" placeholder="Búsqueda..." aria-label="Buscar">
+					    <button class="btn btn-sm btn-outline-success my-2 my-sm-0 rounded-pill" type="submit">Buscar</button>
+					</form>
+				</div>
+			</nav>
+		</div>
+	</div><!--HASTA AQUÍ HEADER-->
+	<div class="container-fluid row bg-light mx-0 px-0">
+		<div class="col-lg-9 text-center pags">
+			<h1 class="pt-3 titleHomeBlue animate__animated animate__pulse animate__infinite">~ Selección de Ensayos ~</h1>
+			<div class="pics">
+				<img src="media/eoctavio.jpg" alt="El laberinto de la soledad" class="pics__img">
+				<p class="pics__texto">
+					En el libro El laberinto de la soledad, el escritor Octavio Paz reflexiona sobre la identidad de México y los valores culturales que mueven los hilos de su historia. Escrito bajo la forma del ensayo, la densidad de sus planteamientos lo han convertido en un texto referencial para toda América Latina.
+				</p>
+			</div>
+			<div class="pics--reverse">
+				<img src="media/eorwell.jpg" alt="Libros vs. cigarrillos" class="pics__img">
+				<p class="pics__texto">
+					Después de contarlos, Orwell quiere ponerles un precio a sus libros. A los que le mandaron para reseñar los anota a mitad de precio, "como si fueran usados", y a otras excepciones les pone asteriscos y notas al pie. "Mis gastos totales en lecturas en los últimos quince años han estado en el área de las 25 libras por año", exclama Orwell al final. En la Londres desabastecida de posguerra, esa cifra le permitía comprar 83 cigarrillos Players por semana. Antes de la guerra le habría alcanzado para 200. Y lanza su primera conclusión: "Con estos precios, estoy gastando más en tabaco que en libros".
+				</p>
+			</div>	
+			<div class="pics">
+				<img src="media/eortega.jpg" alt="La rebelión de las masas" class="pics__img">
+				<p class="pics__texto">
+					El libro se estructura alrededor de una intuición genial: ha terminado la primacía de las elites; las masas, liberadas de la sujeción de aquéllas, han irrumpido en la vida de manera determinante, provocando un trastorno profundo de los valores cívicos y culturales y de las maneras de comportamiento social. Escrito en plena ascensión del comunismo y los fascismos, del sindicalismo y los nacionalismos, y de los primeros brotes de una cultura popular de consumo masivo, la intuición de Ortega establece uno de los rasgos claves de la vida moderna.
+				</p>
+			</div>	
+			<div class="pics--reverse">
+				<img src="media/esabato.jpg" alt="La resistencia" class="pics__img">
+				<p class="pics__texto">
+					Con la misma firme voluntad de dar testimonio sobre su época, Ernesto Sabato nos pone en guardia contra los peligros que aquejan nuestra cultura, ahora en la más grave encrucijada de su historia. Publicado en el año 2000, La resistencia se compone de cinco cartas que Ernesto Sabato dirige a sus lectores frente a los retos de la sociedad ante la llegada del siglo XXI. En ellas, ofrece un acertadísimo análisis de nuestra realidad, de plena vigencia en la actualidad, y aboga por recuperar una serie de valores que nos ayuden a salir de la actual crisis. 
+				</p>
+			</div>
+			<div class="dropdown mt-3 mb-3 text-center">
+			  	<button class="btn btn-info dropdown-toggle extra__boton--spacing" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Cambalaches
+				</button>
+			  	<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+				    <button class="dropdown-item disabled" type="button" aria-disabled="true">Elige una ubicación</button>
+				    <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#microcentroModal">MICROCENTRO</button>
+				    <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#palermoModal">PALERMO</button>
+				    <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#recoletaModal">RECOLETA</button>
+				    <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#urquizaModal">URQUIZA</button>
+			  	</div>
+			</div><!-- menú desplegable con los lugares donde se llevan a cabo los cambalaches, cada opción abre un mapa con la dirección -->
+		</div>	
+		<div class="col-lg-3 mx-0 px-0 text-center">
+			<div class="aside">
+				<h3 class="aside__titulos">Último ensayo leído</h3><!--Contiene un link al cuento ó sipnosis según derechos-->
+				<img src="media/ultimoensayo.jpg" alt="Último ensayo leído" class="aside__img">
+				<p class="aside__texto">
+					«¿Debo acaso insistir en que no tengo la más mínima ambición teórica y que este libro no es sino la confesión de un "practicante" ? La obra de cada novelista contiene una visión implícita de la historia de la novela, una idea de lo que es la novela : es esta idea de la novela, inherente a mis novelas, la que he procurado dejar hablar.»
+				</p>
+				<p class="aside__texto">
+					En estos siete textos relativamente independientes, pero vinculados en un único ensayo, Milan Kundera expone su concepción personal de la novela europea («arte nacido de la risa de Dios»). ¿Está su historia en vías de terminarse ? El caso es que hoy, en la época de las «paradojas terminales», la novela «ya no puede vivir en paz con el espíritu de nuestro tiempo : si aún quiere ‘progresar’ en tanto que la novela, no puede sino hacerlo en contra del progreso del mundo».
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="container row col-12 px-0 mx-0 footerAll">
+		<div>
+			<ul class="list-unstyled">
+				<li><a href="contacto.html" class="linkContacto">Contáctanos</a></li>
+				<li class="btn-info rounded-circle">Suscríbete</li> <!--botón para subribirse al Newsletter-->
+				<li class="btn-info rounded-circle">Facebook</li>
+				<li class="btn-info rounded-circle">Instagram</li>
+				<li class="btn-info rounded-circle">Twitter</li><!--Cada logo contiene link a las redes correspondientes-->
+				<li class="btn-info rounded-circle">Sobre nosotros</li>
+			</ul>
+		</div>
+		<p>Todos los derechos reservados</p>
+	</div>
+	<!-- Modal Microcentro -->
+	<div class="modal fade" id="microcentroModal" tabindex="-1" aria-labelledby="microcentroModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		    <div class="modal-content">
+			    <div class="modal-header">
+			        <h5 class="modal-title" id="microcentroModalLabel">Cambalaches en Microcentro</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        	<span aria-hidden="true">&times;</span>
+			        </button>
+			    </div>
+			    <div class="modal-body">
+			      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878895306!2d-58.38375908519524!3d-34.603734465005104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1625136397719!5m2!1ses!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" class="w-100 mx-auto"></iframe>
+			    </div>
+			    <div class="modal-footer">
+			        <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+			    </div>
+		    </div>
+		</div>
+	</div>
+	<!-- Modal Palermo -->
+	<div class="modal fade" id="palermoModal" tabindex="-1" aria-labelledby="palermoModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		    <div class="modal-content">
+			    <div class="modal-header">
+			        <h5 class="modal-title" id="palermoModalLabel">Cambalaches en Palermo</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        	<span aria-hidden="true">&times;</span>
+			        </button>
+			    </div>
+			    <div class="modal-body">
+			      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6116223640643!2d-58.431453447622616!3d-34.58869247177576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb588f4af5d17%3A0x560fe6ff3f099abf!2sPlazoleta%20Julio%20Cort%C3%A1zar!5e0!3m2!1ses!2sar!4v1625136960057!5m2!1ses!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" class="w-100 mx-auto"></iframe>
+			    </div>
+			    <div class="modal-footer">
+			        <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+			    </div>
+		    </div>
+		</div>
+	</div>
+	<!-- Modal Recoleta-->
+	<div class="modal fade" id="recoletaModal" tabindex="-1" aria-labelledby="recoletaModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			    <div class="modal-header">
+			        <h5 class="modal-title" id="recoletaModalLabel">Cambalaches en Recoleta</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        	<span aria-hidden="true">&times;</span>
+			        </button>
+			    </div>
+			    <div class="modal-body">
+			      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7136047231497!2d-58.39369378519588!3d-34.58611256407298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa24c8efcad%3A0x4a52ca8190703ddc!2sCentro%20Cultural%20Recoleta!5e0!3m2!1ses!2sar!4v1625137299348!5m2!1ses!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" class="w-100 mx-auto"></iframe>
+			    </div>
+			    <div class="modal-footer">
+			        <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+			    </div>
+		    </div>
+		</div>
+	</div>
+	<!-- Modal Urquiza -->
+	<div class="modal fade" id="urquizaModal" tabindex="-1" aria-labelledby="urquizaModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			    <div class="modal-header">
+			        <h5 class="modal-title" id="urquizaModalLabel">Cambalaches en Urquiza</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        	<span aria-hidden="true">&times;</span>
+			        </button>
+			    </div>
+			    <div class="modal-body">
+			      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2086165862206!2d-58.47743968519628!3d-34.573587563410655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66545d9115f%3A0x398973a3b852e3a4!2sPlaza%20Zapiola!5e0!3m2!1ses!2sar!4v1625137058791!5m2!1ses!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" class="w-100 mx-auto"></iframe>
+			    </div>
+			   	<div class="modal-footer">
+			        <button type="button" class="btn btn-info" data-dismiss="modal">Cerrar</button>
+			    </div>
+			</div>
+		</div>
+	</div>		
+	<a href="recomienda.html"><img src="media/books.png" alt="icono" class="icono--left"></a>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>	
+</body> 
+</html>
