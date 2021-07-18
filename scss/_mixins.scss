@@ -1,14 +1,17 @@
 @mixin resumen{
-    width: 60%;
     margin: 0.5rem auto;
-    padding: 1em;
+    padding: 2em;
     background-color: #eef1fd;
+    border-radius: 1em 5em;
     color: black;
+    font-weight: bold;
+    word-spacing: .1em;
+    letter-spacing: .08em;
 }
 
 @mixin icono{
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     position: fixed;
     bottom: 1em;
 }
@@ -21,14 +24,14 @@
 
 @mixin textoIntro{
 	color: black;
-	text-align: center;
+	text-align: justify;
 	letter-spacing: .08em;
-	padding: 2.5em;
+	padding: 2em;
 	font-weight: bold;
 	word-spacing: .1em;
 }
 
-/*@mixin titulosLibros{
-    font-size: 1.5rem; 
-
-}*/
+@mixin titulosLibros{
+    display: inline-block;
+    font-size: 2rem; 
+}

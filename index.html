@@ -12,9 +12,9 @@
 	<link rel="stylesheet" type="text/css" href="css/humanos.css">
 </head>
 <body>
-	<div class="container-fluid miBg">
-		<div class="header">
-			<nav class="navbar navbar-expand-lg navbar-light">
+	<header class="container-fluid miBg">
+		<nav class="header">
+			<div class="navbar navbar-expand-lg navbar-light">
 				<a class="navbar-brand" href="index.html">LOGO</a>
 				<button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -31,22 +31,22 @@
 					    <button class="btn btn-sm btn-outline-success my-2 my-sm-0 rounded-pill" type="submit">Buscar</button>
 					</form>
 				</div>
-			</nav>
-		</div>
-	</div><!--HASTA AQUÍ HEADER-->
-	<div class="container-fluid row bg-light mx-0 px-0">
-		<div class="col-lg-9 text-center">
+			</div>
+		</nav>
+	</header>
+	<main class="container-fluid row bg-light mx-0 px-0">
+		<section class="col-lg-9 text-center">
 			<div class="text-left encabezados">
 				<h1>Blog de literatura, comentarios y recomendaciones de libros</h1>
 			</div>
-			<div class="pt-3 titleHomeBlue animate__animated animate__pulse animate__infinite">~ Libro del día ~</div>
+			<div class="pt-3 titleHomeBlue animate__animated animate__pulse animate__infinite">Libro del día</div>
 			<h2>Final del juego</h2>
-			<img src="media/julio.jpg" alt="Mi imagen" class="w-50 mw-50">
+			<img src="media/julio.jpg" alt="Mi imagen" class="autor">
 			<h3>JULIO CORTÁZAR</h3>
 			<p class="resumen">
 				El libro cuenta con 18 cuentos divididos en tres secciones. Empeñado en transgredir las leyes de la narrativa convencional, en estos relatos Julio Cortázar combina la intertextualidad, un uso inédito de lo coloquial y el juego interminable para hacer entrar al lector en un particularísimo universo donde nada es lo que parece.
 			</p>	
-			<ul class="text-left text-lg-center resumen__lista">
+			<ul class="text-left resumen__lista">
 				<li>
 					<ol>
 						<li>Continuidad de los parques</li>
@@ -69,7 +69,7 @@
 					</ol>
 				</li>
 				<li>
-					<ol>
+					<ol class="text-lg-left">
 						<li>Relato con un fondo de agua</li>
 						<li>Después del almuerzo</li>
 						<li>Axolotl</li>
@@ -94,8 +94,8 @@
 				  	</div><!-- menú desplegable con los lugares donde se llevan a cabo los cambalaches, cada opción abre un mapa con la dirección -->
 				</div>
 			</div>
-		</div>
-		<div class="col-lg-3 mx-0 px-0 text-center">
+		</section>
+		<section class="col-lg-3 mx-0 px-0 text-center">
 			<div class="aside">
 				<h4 class="aside__titulos">Lo que estoy leyendo ahora</h4>
 				<img src="media/sombrero.jpg" alt="lo que leo" class="w-50 aside__img">
@@ -103,21 +103,21 @@
 				<img src="media/eortega.jpg" alt="lo que leeré" class="w-50 aside__img">
 				<!-- Cada imagen del libro contiene un link a un shopping cart -->
 			</div>	
-		</div>
-	</div>
-	<div class="container row col-12 px-0 mx-0 footerAll">
+		</section>
+	</main>
+	<footer class="container row col-12 px-0 mx-0 footerAll">
 		<div>
 			<ul class="list-unstyled">
 				<li class="btn-info rounded-circle"><a href="contacto.html" class="linkContacto">Contáctanos</a></li>
-				<li class="btn-info rounded-circle">Suscríbete</li> <!--botón para subribirse al Newsletter-->
-				<li class="btn-info rounded-circle">Facebook</li>
-				<li class="btn-info rounded-circle">Instagram</li>
-				<li class="btn-info rounded-circle">Twitter</li><!--Cada logo contiene link a las redes correspondientes-->
-				<li class="btn-info rounded-circle">Sobre nosotros</li>
+				<li class="btn-info rounded-circle"><a href="#" class="linkContacto">Suscríbete</a></li> <!--botón para subribirse al Newsletter-->
+				<li class="btn-info rounded-circle"><a href="https://www.facebook.com/" class="linkContacto" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+				<li class="btn-info rounded-circle"><a href="https://www.instagram.com/" class="linkContacto" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+				<li class="btn-info rounded-circle"><a href="https://twitter.com/" class="linkContacto" target="_blank" rel="noopener noreferrer">Twitter</a></li><!--Cada logo contiene link a las redes correspondientes-->
+				<li class="btn-info rounded-circle"><a href="#" class="linkContacto" target="_blank" rel="noopener noreferrer">Sobre nosotros</a></li>
 			</ul>
 		</div>
 		<p>Todos los derechos reservados</p>
-	</div>
+	</footer>
 	<!-- Modal Microcentro -->
 	<div class="modal fade" id="microcentroModal" tabindex="-1" aria-labelledby="microcentroModalLabel" aria-hidden="true">
 		<div class="modal-dialog">

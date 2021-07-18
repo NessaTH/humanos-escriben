@@ -13,7 +13,7 @@
 	{
 		.pics{
 			flex-wrap: nowrap;
-			width: ($w-total)-15; 
+			width: ($w-total)-10; 
 		}
 	}
 
@@ -22,8 +22,6 @@
 	@extend .pics;
 	flex-direction: row-reverse;
 }
-
-
 
 .pics__img{
 	width: 50%;
@@ -35,17 +33,20 @@
 	box-sizing: border-box;
 }
 
-/*.pics__texto h2{
+.pics__texto h2{
 	@include titulosLibros;
 }
-.pics__texto p{
-	@include textoIntro;
-
-}PARA USAR LUEGO*/
-
 .pics__texto{
-	@include textoIntro;
+	& p{
+		@include textoIntro;
+	}	
 }
+
+.pics__texto, img.pics__img{
+	align-self: flex-start;
+	margin-top: 3rem;
+}
+
 
 
 .backContactoRecomienda{

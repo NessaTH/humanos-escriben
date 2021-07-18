@@ -13,14 +13,22 @@
 
 .header__botones a:hover{
     background-color: white;
-    transform: rotate(10deg);
-    transition: all 300ms ease-in;
 }
-a.header__botones--izq:hover{
-    background-color: white;
-    transform: rotateZ(-10deg);
-    transition: all 300ms ease-in;
+
+@media all and (min-width: 720px)
+{
+    .header__botones a:hover{
+        background-color: white;
+        transform: rotate(10deg);
+        transition: all 300ms ease-in;
+    }
+    a.header__botones--izq:hover{
+        background-color: white;
+        transform: rotateZ(-10deg);
+        transition: all 300ms ease-in;
+    }
 }
+
 
 .header__barra{
     max-width: ($w-total)-40; 

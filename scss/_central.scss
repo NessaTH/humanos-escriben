@@ -21,16 +21,33 @@ h3{
     font-size: 1rem;
 }
 
+img.autor{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10%;
+    margin: 1rem auto;
+}
+
 
 .resumen{
     @include resumen;
+    width: 90%;
 }
 .resumen__lista{
     @include resumen;
+    width: 90%;
     list-style-type: upper-roman;
     list-style-position: inside;
     margin-top: 1rem;
+    padding-left: 15%;
 } 
+
+@media all and (min-width: 720px){
+    .resumen, .resumen__lista{
+        width: 60%;
+    }
+    
+}
 
 
 
@@ -40,6 +57,10 @@ h3{
 .extra__p{
     margin: 1rem;
     padding: 1em;
+    color: black;
+    font-weight: bold;
+    word-spacing: .1em;
+    letter-spacing: .08em;
 }
 .extra__iframe{
     max-width: 100%;
@@ -75,5 +96,5 @@ h3{
 
 .icono--right{
     @include icono;
-    right: .5em;
+    right: 1em;
 }
