@@ -1,11 +1,7 @@
 .footerAll{
-    display: flex;
-    justify-content: space-evenly;
-    min-height: $vh-total/5; /*OPERACION*/
-    border-top: 2px solid #a5c8ce;
+    min-height: $vh-total/5; 
     background: linear-gradient(318deg, rgba(2,0,36,1) 0%, rgba(9,113,121,0.8071603641456583) 35%, rgba(0,212,255,1) 100%);
     color: white;
-    font-style: italic;
     font-weight: bold;
     margin-top: 0;
     padding-bottom: 0.5em;
@@ -13,7 +9,6 @@
 }
 
 .footerAll li{
-    display: inline-block;
     padding: 1em;
     margin: 1rem;
 }

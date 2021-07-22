@@ -1,26 +1,11 @@
 .pics{
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
 	width: $w-total;
 	max-width: 1200px;
-	margin: 3rem auto;
 	background-color: #60b6c736;
 	border-radius: 1em 5em;
-}
-
-@media all and (min-width: 720px)
-	{
-		.pics{
-			flex-wrap: nowrap;
-			width: ($w-total)-10; 
-		}
+	@media all and (min-width: 768px){		
+		width: ($w-total)-10; 
 	}
-
-
-.pics--reverse{
-	@extend .pics;
-	flex-direction: row-reverse;
 }
 
 .pics__img{
@@ -28,9 +13,7 @@
 	height: 50%;
 	max-width: 269px;
 	max-height: 377px;
-	margin: 3rem;
 	border: 5px outset;
-	box-sizing: border-box;
 }
 
 .pics__texto h2{
@@ -53,12 +36,6 @@
 	background-image: url("../media/contacto.png"); 
 }
 
-
-.formContacto .block{
-	display: block;
-	margin-bottom: 0;
-	padding: 0.5em;
-}
 
 .formContacto{
 	font-family: 'Bree Serif', serif;

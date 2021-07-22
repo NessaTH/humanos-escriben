@@ -9,26 +9,27 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 	<link rel="stylesheet" type="text/css" href="css/humanos.css">
 </head>
 <body>
 	<header class="container-fluid miBg">
-		<nav class="header">
+		<nav class="d-flex align-items-center justify-content-center header">
 			<div class="navbar navbar-expand-lg navbar-light">
 				<a class="navbar-brand" href="index.html">LOGO (lleva al Home)</a>
 				<button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav ml-5 header__botones">
-						<a class="nav-link p-3 header__botones--izq" href="cuentos.html">Cuentos</a>
+				<div class="d-inline-block collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav ml-5 header__links">
+						<a class="nav-link p-3" href="cuentos.html">Cuentos</a>
 						<a class="nav-link p-3" href="ensayos.html">Ensayos</a>
-						<a class="nav-link p-3 header__botones--izq" href="novelas.html">Novelas</a>
+						<a class="nav-link p-3" href="novelas.html">Novelas</a>
 						<a class="nav-link p-3" href="poesia.html">Poesía</a>
 					</div>
 					<form class="form-inline pl-4">
 					    <input class="form-control mr-sm-2 header__barra" type="search" placeholder="Búsqueda..." aria-label="Buscar">
-					    <button class="btn btn-sm btn-outline-success my-2 my-sm-0 rounded-pill" type="submit">Buscar</button>
+					    <button class="btn btn-sm my-2 my-sm-0 rounded-pill header__boton" type="submit">Buscar</button>
 					</form>
 				</div>
 			</div>
@@ -40,8 +41,8 @@
 				<h1>Selección de novelas, reseñas, resumenes y recomendaciones</h1>
 			</div>
 			<div class="pt-3 titleHomeBlue animate__animated animate__pulse animate__infinite">Selección de Novelas</div>
-			<article class="pics">
-				<img src="media/ncrimen.jpg" alt="Crimen y castigo" class="pics__img">
+			<article class="d-flex align-items-center flex-wrap flex-lg-nowrap my-5 mx-auto pics" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+				<img src="media/ncrimen.jpg" alt="Crimen y castigo" class="mx-auto m-lg-5 pics__img">
 				<div class="pics__texto">
 					<h2>«Crimen y castigo»</h2>
 					<h3>Fiodor Dostoyevski</h3>
@@ -50,9 +51,9 @@
 					</p>
 				</div>				
 			</article>
-			<article class="pics--reverse">
-				<img src="media/ncumbres.jpg" alt="Cumbres borrascosas" class="pics__img">
-				<div class="pics__texto">
+			<article class="d-flex align-items-center flex-wrap flex-lg-nowrap my-5 mx-auto pics" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+				<img src="media/ncumbres.jpg" alt="Cumbres borrascosas" class="order-lg-2 mx-auto m-lg-5 pics__img">
+				<div class="order-lg-1 pics__texto">
 					<h2>«Cumbres borrascosas»</h2>
 					<h3>Emily Brontë</h3>
 					<p>
@@ -60,8 +61,8 @@
 					</p>
 				</div>				
 			</article>	
-			<article class="pics">
-				<img src="media/nml.jpg" alt="La insoportable levedad del ser" class="pics__img">
+			<article class="d-flex align-items-center flex-wrap flex-lg-nowrap my-5 mx-auto pics" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+				<img src="media/nml.jpg" alt="La insoportable levedad del ser" class="mx-auto m-lg-5 pics__img">
 				<div class="pics__texto">
 					<h2>«La insoportable levedad del ser»</h2>
 					<h3>Milan Kundera</h3>
@@ -70,9 +71,9 @@
 					</p>
 				</div>				
 			</article>	
-			<article class="pics--reverse">
-				<img src="media/nf.jpg" alt="Frankenstein" class="pics__img">
-				<div class="pics__texto">
+			<article class="d-flex align-items-center flex-wrap flex-lg-nowrap my-5 mx-auto pics" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+				<img src="media/nf.jpg" alt="Frankenstein" class="order-lg-2 mx-auto m-lg-5 pics__img">
+				<div class="order-lg-1 pics__texto">
 					<h2>«Frankenstein o el moderno Prometeo»</h2>
 					<h3>Mary Shelley</h3>
 					<p>
@@ -107,15 +108,14 @@
 			</article>
 		</section>
 	</main>
-	<footer class="container row col-12 px-0 mx-0 footerAll">
+	<footer class="container row d-flex justify-content-center col-12 px-0 mx-0 footerAll">
 		<div>
 			<ul class="list-unstyled">
-				<li class="btn-info rounded-circle"><a href="contacto.html" class="linkContacto">Contáctanos</a></li>
-				<li class="btn-info rounded-circle"><a href="#" class="linkContacto">Suscríbete</a></li> <!--botón para subribirse al Newsletter-->
-				<li class="btn-info rounded-circle"><a href="https://www.facebook.com/" class="linkContacto" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-				<li class="btn-info rounded-circle"><a href="https://www.instagram.com/" class="linkContacto" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-				<li class="btn-info rounded-circle"><a href="https://twitter.com/" class="linkContacto" target="_blank" rel="noopener noreferrer">Twitter</a></li><!--Cada logo contiene link a las redes correspondientes-->
-				<li class="btn-info rounded-circle"><a href="#" class="linkContacto" target="_blank" rel="noopener noreferrer">Sobre nosotros</a></li>
+				<li class="btn-info rounded-circle d-inline-block"><a href="contacto.html" class="linkContacto">Contáctanos</a></li>
+				<li class="btn-info rounded-circle d-inline-block"><a href="#" class="linkContacto">Suscríbete</a></li> <!--botón para subribirse al Newsletter-->
+				<li class="btn-info rounded-circle d-inline-block"><a href="https://www.facebook.com/" class="linkContacto" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+				<li class="btn-info rounded-circle d-inline-block"><a href="https://www.instagram.com/" class="linkContacto" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+				<li class="btn-info rounded-circle d-inline-block"><a href="https://twitter.com/" class="linkContacto" target="_blank" rel="noopener noreferrer">Twitter</a></li><!--Cada logo contiene link a las redes correspondientes-->
 			</ul>
 		</div>
 		<p>Todos los derechos reservados</p>
@@ -198,6 +198,10 @@
 	</div>		
 	<a href="recomienda.html"><img src="media/books.png" alt="icono" class="icono--left"></a>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	AOS.init();
+	</script>    	
 </body> 
 </html>	

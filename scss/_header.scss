@@ -2,34 +2,26 @@
     background: linear-gradient(318deg, rgba(2,0,36,1) 0%, rgba(9,113,121,0.8071603641456583) 35%, rgba(0,212,255,1) 100%);
 }
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: ($vh-total/5)-5; 
     font-size: 1.2rem;
     font-family: 'Bree Serif', serif;
     font-family: 'Castoro', serif;
 }
 
-.header__botones a:hover{
+.header__links a:hover{
     background-color: white;
-}
-
-@media all and (min-width: 720px)
-{
-    .header__botones a:hover{
-        background-color: white;
-        transform: rotate(10deg);
-        transition: all 300ms ease-in;
-    }
-    a.header__botones--izq:hover{
-        background-color: white;
-        transform: rotateZ(-10deg);
-        transition: all 300ms ease-in;
-    }
+    border-radius: 50% 20% / 10% 40%;
 }
 
 
 .header__barra{
     max-width: ($w-total)-40; 
+}
+
+.header__boton{
+    color: white;
+    border: 1px solid white;
+    &:hover{
+        background: silver;
+    }
 }
