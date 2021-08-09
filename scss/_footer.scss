@@ -1,27 +1,61 @@
 .footerAll{
-    min-height: $vh-total/5; 
+    font-family: 'Bree Serif', serif;
+    font-family: 'Castoro', serif;
+    min-height: ($vh-total/5)-5; 
     background: linear-gradient(318deg, rgba(2,0,36,1) 0%, rgba(9,113,121,0.8071603641456583) 35%, rgba(0,212,255,1) 100%);
     color: white;
     font-weight: bold;
-    margin-top: 0;
-    padding-bottom: 0.5em;
-    padding-top: 1em;
+
+    p {
+        font-size: .8rem;
+        letter-spacing: .1em;
+    }
 }
 
-.footerAll li{
-    padding: 1em;
-    margin: 1rem;
+.contactanos{
+    color: white;  
 }
 
-.footerAll p{
-    width: $w-total;
-    margin: auto;
-    text-align: center;
-    font-size: .8rem;
-    letter-spacing: .1em;
-}
 
 .linkContacto{
-    color: white;
-    padding-top: 1em;   
+    @extend .contactanos;
+    font-size: 2rem; 
+}
+
+.bi-envelope-fill{
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+    &:hover{
+        color: black;
+    }
+}
+
+.bi-facebook{
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
+
+.bi-youtube{
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+    &:hover{
+        color: #f00;
+    }
+}
+
+.bi-instagram{
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+    &:hover{
+        color: transparent;
+        background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
+
+.bi-twitter{
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+    &:hover{
+        color: rgb(29,161,242);
+    }
 }

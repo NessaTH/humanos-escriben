@@ -189,7 +189,13 @@ img.autor {
   margin-top: 3rem; }
 
 .backContactoRecomienda {
-  background-image: url("../media/contacto.png"); }
+  background-image: url("../media/contactosm.png"); }
+  @media all and (min-width: 768px) {
+    .backContactoRecomienda {
+      background-image: url("../media/contactomd.png"); } }
+  @media all and (min-width: 992px) {
+    .backContactoRecomienda {
+      background-image: url("../media/contacto.png"); } }
 
 .formContacto {
   font-family: 'Bree Serif', serif;
@@ -213,30 +219,52 @@ img.autor {
   width: 50%;
   margin: 0 auto 1.2rem auto; }
 
-@media all and (min-width: 720px) {
+@media all and (min-width: 768px) {
   .misInputs, .miSelector {
     width: 25%; } }
 
 .footerAll {
-  min-height: 20vh;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Castoro', serif;
+  min-height: 15vh;
   background: linear-gradient(318deg, #020024 0%, rgba(9, 113, 121, 0.80716) 35%, #00d4ff 100%);
   color: white;
-  font-weight: bold;
-  margin-top: 0;
-  padding-bottom: 0.5em;
-  padding-top: 1em; }
+  font-weight: bold; }
+  .footerAll p {
+    font-size: .8rem;
+    letter-spacing: .1em; }
 
-.footerAll li {
-  padding: 1em;
-  margin: 1rem; }
-
-.footerAll p {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  font-size: .8rem;
-  letter-spacing: .1em; }
+.contactanos, .linkContacto {
+  color: white; }
 
 .linkContacto {
-  color: white;
-  padding-top: 1em; }
+  font-size: 2rem; }
+
+.bi-envelope-fill {
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4); }
+  .bi-envelope-fill:hover {
+    color: black; }
+
+.bi-facebook {
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4); }
+
+.bi-youtube {
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4); }
+  .bi-youtube:hover {
+    color: #f00; }
+
+.bi-instagram {
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4); }
+  .bi-instagram:hover {
+    color: transparent;
+    background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text; }
+
+.bi-twitter {
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4); }
+  .bi-twitter:hover {
+    color: #1da1f2; }

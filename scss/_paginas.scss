@@ -33,7 +33,13 @@
 
 
 .backContactoRecomienda{
-	background-image: url("../media/contacto.png"); 
+	background-image: url("../media/contactosm.png"); 
+	@media all and (min-width: 768px){
+		background-image: url("../media/contactomd.png")
+	}
+	@media all and (min-width: 992px){
+		background-image: url("../media/contacto.png")
+	}
 }
 
 
@@ -65,7 +71,7 @@
 	margin: 0 auto 1.2rem auto;
 }
 
-@media all and (min-width: 720px)
+@media all and (min-width: 768px)
 	{
 		.misInputs, .miSelector{
 			width: ($w-total)/4;
